@@ -3,7 +3,7 @@ package show;
 import arc.*;
 import arc.util.*;
 import mindustry.*;
-import mindustry.content.*;
+import mindustry.content.blocks.*;
 import mindustry.world.meta.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
