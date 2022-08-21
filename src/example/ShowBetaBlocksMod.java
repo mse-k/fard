@@ -7,6 +7,8 @@ import mindustry.content.*;
 import mindustry.world.meta.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
+import mindustry.world.blocks.power.*;
+import mindustry.world.blocks.defense.*;
 
 public class ShowBetaBlocksMod extends Mod {
     @Override
