@@ -3,7 +3,7 @@ package show;
 import arc.*;
 import arc.util.*;
 import mindustry.*;
-import mindustry.content.blocks.*;
+import mindustry.content.*;
 import mindustry.world.meta.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
@@ -11,6 +11,8 @@ import mindustry.mod.*;
 public class ShowBetaBlocksMod extends Mod {
     @Override
     public void loadContent(){
-        Blocks.shieldBreaker.buildVisibility = Blocks.shieldProjector.buildVisibility = Blocks.largeShieldProjector.buildVisibility = Blocks.beamLink.buildVisibility = BuildVisibility.shown;
+        Vars.content.blocks().each(b -> b instanceof BaseShield || b instanceof ShieldBreaker || b instanceof LongPowerNode, b -> {
+            b.buildVisibility = BuildVisibility.shown;
+        });
     }
 }
